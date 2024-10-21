@@ -1,0 +1,102 @@
+
+getgenv().delusion = {
+    ['Combat'] = {
+        ['Keybind'] = Enum.KeyCode.C,
+        ['Prediction'] = 0.181,
+        ['Part'] = "HumanoidRootPart",
+        
+        
+    },
+
+    ['Smoothness'] = {
+        ['Amount'] = 0.038,
+        ['Style'] = "Elastic",
+        ['Direction'] = "InOut"
+
+    },
+
+    ["Shake"] = {
+        ['CameraShake'] = 0,
+
+    },
+
+    
+    ['Silent'] = {
+        ["Prediction"] = 0.134,
+        ["Detection"] = {Close = 35, Mid = 65, Far = math.huge},
+
+    },
+
+    ['SpecificDis'] = {
+        ["Enabled"] = true,
+        ["Prediction"] = {Close = 0.138, Mid = 0.1247, Far = 0.123,} 
+
+    },
+
+    
+    
+    ["Offsets"] = {
+        ['Jump'] = {Amount = 0},
+        ['Fall'] = {Amount = 0},
+        
+    },
+    
+
+    ["Checks"] = {
+        ['TargetDeath'] = true,
+        ['PlayerDeath'] = true,
+        ['CheckKoStatus'] = true,
+        ['AntiGroundShots'] = false,
+        
+    },
+
+
+
+    ["Spin"] = {
+        ['Enabled'] = true,
+        ['SpinSpeed'] = 4900,
+        ['Degrees'] = 360,
+        ['Keybind'] = Enum.KeyCode.V,
+
+
+    },
+
+    ["Ground"] = {
+        ['Smoothness'] = 0.2, -- 0.2 if blatant
+        ['HorizontalPrediction'] = 0.8,
+        ['VerticalPrediction'] = 0.18 ,
+        ['Part'] = "HumanoidRootPart",
+
+        ['Shake'] = false,
+        ['ShakeAmount'] = {
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"]= 1
+    },
+
+    },
+    
+    ["MouseTp"] = {
+        
+        ['Smoothness'] = 0.20,
+        ['HorizontalPrediction'] = 0.3,
+        ['VerticalPrediction'] = 0.89,
+        ['Part'] = "Head",
+
+        ['Shake'] = false,
+        ['ShakeAmount'] = {
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0.4
+
+
+
+        
+    
+   
+
+        },
+    },
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/141b06f9c2f2e632298699c19d361e6c.lua"))()
