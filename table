@@ -1,4 +1,4 @@
-
+script_key="keyhere";
 getgenv().delusion = {
     ['Combat'] = {
         ['Keybind'] = Enum.KeyCode.C,
