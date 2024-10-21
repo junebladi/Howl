@@ -1,4 +1,3 @@
-script_key="keyhere";
 getgenv().delusion = {
     ['Combat'] = {
         ['Keybind'] = Enum.KeyCode.C,
@@ -98,5 +97,3 @@ getgenv().delusion = {
         },
     },
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/141b06f9c2f2e632298699c19d361e6c.lua"))()
