@@ -1,99 +1,84 @@
 getgenv().delusion = {
+    ["intro"] = {
+        ['Enabled'] = true,
+    },
+
     ['Combat'] = {
         ['Keybind'] = Enum.KeyCode.C,
-        ['Prediction'] = 0.181,
+        ['Prediction'] = 0.135,
         ['Part'] = "HumanoidRootPart",
-        
-        
     },
 
     ['Smoothness'] = {
-        ['Amount'] = 0.038,
-        ['Style'] = "Elastic",
-        ['Direction'] = "InOut"
-
+        ['Amount'] = 0.0124,
     },
 
     ["Shake"] = {
         ['CameraShake'] = 0,
-
     },
 
-    
     ['Silent'] = {
-        ["Prediction"] = 0.134,
+        ["Prediction"] = 0.1219,
         ["Detection"] = {Close = 35, Mid = 65, Far = math.huge},
-
     },
 
     ['SpecificDis'] = {
-        ["Enabled"] = true,
-        ["Prediction"] = {Close = 0.138, Mid = 0.1247, Far = 0.123,} 
-
+        ["Enabled"] = false,
+        ["Prediction"] = {Close = 0.138, Mid = 0.1247, Far = 0.123},
     },
 
-    
-    
     ["Offsets"] = {
-        ['Jump'] = {Amount = 0},
-        ['Fall'] = {Amount = 0},
-        
+        ['Jump'] = {Amount = 0.65},
+        ['Fall'] = {Amount = -0.15},
     },
-    
 
     ["Checks"] = {
         ['TargetDeath'] = true,
         ['PlayerDeath'] = true,
         ['CheckKoStatus'] = true,
-        ['AntiGroundShots'] = false,
-        
     },
-
-
-
+    
+    ["Esp"] = {
+        ['Chams'] = true,
+        ['Key'] = Enum.KeyCode.T,
+        ['Color'] = Color3.fromRGB(200, 100, 10),
+        ['Outline'] = Color3.fromRGB(50, 50, 50),
+    },
+    
+    ['Textures'] = {
+        ['Enabled'] = true,
+        ['Material'] = "Brick",
+        ['Color'] = Color3.fromRGB(50, 50, 50)
+    },
+    
     ["Spin"] = {
         ['Enabled'] = true,
         ['SpinSpeed'] = 4900,
         ['Degrees'] = 360,
         ['Keybind'] = Enum.KeyCode.V,
-
-
-    },
-
-    ["Ground"] = {
-        ['Smoothness'] = 0.2, -- 0.2 if blatant
-        ['HorizontalPrediction'] = 0.8,
-        ['VerticalPrediction'] = 0.18 ,
-        ['Part'] = "HumanoidRootPart",
-
-        ['Shake'] = false,
-        ['ShakeAmount'] = {
-            ["X"] = 0,
-            ["Y"] = 0,
-            ["Z"]= 1
-    },
-
-    },
-    
-    ["MouseTp"] = {
         
-        ['Smoothness'] = 0.20,
-        ['HorizontalPrediction'] = 0.3,
-        ['VerticalPrediction'] = 0.89,
-        ['Part'] = "Head",
+    },
 
-        ['Shake'] = false,
-        ['ShakeAmount'] = {
-            ["X"] = 0,
-            ["Y"] = 0,
-            ["Z"] = 0.4
+    ["Macro"] = {
+        ['Keybind'] = "x",
+        ['Speed'] = 1,
+        ['Type'] = "Third" -- "Third", "First"
+    },
 
-
-
-        
-    
-   
-
+    ["Misc"] = {
+        ["Fog"] = { 
+            ['Enabled'] = true, 
+            ['Color'] = Color3.fromRGB(100, 20, 40), 
+            ['StartDistance'] = 30, 
+            ['EndDistance'] = 150 
         },
-    },
+        ["SurroundingAmbient"] = { 
+            ['Enabled'] = true, 
+            ['Color'] = Color3.fromRGB(0, 50, 100) 
+        },
+        ["ExternalAmbient"] = { 
+            ['Enabled'] = true, 
+            ['Color'] = Color3.fromRGB(150, 100, 50) 
+        }
+    }
 }
