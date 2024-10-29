@@ -3,7 +3,6 @@ getgenv().delusion = {
         ["Keybind"] = Enum.KeyCode.X,
 
         ["CamlockPrediction"] = 0.179,
-        ["Prediction"] = 0.1356875,
 
         ["TargetPart"] = "HumanoidRootPart",
 
