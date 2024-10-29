@@ -3,15 +3,12 @@ getgenv().delusion = {
         ["Keybind"] = Enum.KeyCode.X,
 
         ["CamlockPrediction"] = 0.139,
-        ["Prediction"] = 0.1356875,
-
-        ["PredictionVelocity"] = 0.164,
         ["TargetPart"] = "HumanoidRootPart",
 
         ["NearestPart"] = false,
         ["SelectedParts"] = {"Head", "HumanoidRootPart", "LowerTorso"},
 
-        ["CameraSmoothing"] = 0.10,
+        ["CameraSmoothing"] = 0.20,
         ["ThirdPerson"] = true,
 
         ["FirstPerson"] = true,
