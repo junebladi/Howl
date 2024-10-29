@@ -1,29 +1,28 @@
+script_key="";
 getgenv().delusion = {
-    ["Aimbot"] = {
-        ["Keybind"] = Enum.KeyCode.X,
+    ['Aimbot'] = {
+        ['Keybind'] = Enum.KeyCode.X,
 
-        ["CamlockPrediction"] = 0.179,
-
-        ["TargetPart"] = "HumanoidRootPart",
-
-        ["NearestPart"] = false,
-        ["SelectedParts"] = {"Head", "HumanoidRootPart", "LowerTorso"},
-
+        ['Prediction'] = 0.135,
         ["CameraSmoothing"] = 0.10,
-        ["ThirdPerson"] = true,
 
-        ["FirstPerson"] = true,
+        ['ShakePower'] = 0,
+        ['Part'] = "HumanoidRootPart",
+
+        ['Jump'] = 0.56,
+        ['Fall'] = -0.20,
 
         ["HitChance"] = true,
-        ["ShakePower"] = 0,
-
-        ["JumpOffset"] = 0.3,
-        ["FallOffset"] = -0.2,
-
         ["PredictMovement"] = true,
+
+        ["ThirdPerson"] = false,
+        ["FirstPerson"] = true,
+
     },
     ['Silent'] = {
-        ["Prediction"] = 0.135,
+        ["Prediction"] = 0.14276,
+        ["NearestPart"] = false,
+        ["SelectedParts"] = {"Head", "HumanoidRootPart", "LowerTorso"},
         ["Detection"] = {
             ['Close'] = 35, 
             ['Mid'] = 65, 
@@ -32,6 +31,7 @@ getgenv().delusion = {
         ["Config"] = {
             ["Points"] = {
                 ["Point Offset"] = 0
+
             }
         }
     },
@@ -43,26 +43,12 @@ getgenv().delusion = {
             ['Far'] = 0.123
         }
     },
-    ["Safety"] = {
+    ["Checks"] = {
+        ['DisableOnTargetDeath'] = true,
+        ['DisableOnPlayerDeath'] = true,
+        ['CheckKoStatus'] = true,
         ["AntiGroundShots"] = false,
         ["Curve"] = false,
-    },
-    ["Checks"] = {
-        ["DisableOnTargetDeath"] = true,
-        ["DisableOnPlayerDeath"] = true,
-        ["CheckKoStatus"] = true,
-    },
-    ["MouseTp"] = {
-        ['Smoothness'] = 0.20,
-        ['HorizontalPrediction'] = 0.3,
-        ['VerticalPrediction'] = 0.89,
-        ['Part'] = "Head",
-        ['Shake'] = true,
-        ['ShakeAmount'] = {
-            ["X"] = 2,
-            ["Y"] = 2,
-            ["Z"] = 0.4
-        },
     },
     ["ViewCircle"] = {
         ["ShowCircle"] = true,
@@ -95,10 +81,19 @@ getgenv().delusion = {
         ['Color'] = Color3.fromRGB(10, 50, 10),
         ['Outline'] = Color3.fromRGB(50, 50, 50)
     },
+    ["Macro"] = {
+        ['Enabled'] = true,
+        ['Keybind'] = "x",
+        ['SideButton'] = "Button4",
+        ['Speed'] = 0.5,
+        ['Type'] = "Third"
+    },
     ["Cframe"] = {
         ['Enabled'] = true,
         ['Toggle'] = "V",
         ['Multiplier'] = 0.5,
-        ['Speed'] = 5 
+        ['Speed'] = 2
     }
 }
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/141b06f9c2f2e632298699c19d361e6c.lua"))()
