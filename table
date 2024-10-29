@@ -2,29 +2,29 @@ getgenv().delusion = {
     ["Aimbot"] = {
         ["Keybind"] = Enum.KeyCode.X,
 
-        ["CamlockPrediction"] = 0.139,
+        ["CamlockPrediction"] = 0.179,
+        ["Prediction"] = 0.1356875,
+
         ["TargetPart"] = "HumanoidRootPart",
 
         ["NearestPart"] = false,
         ["SelectedParts"] = {"Head", "HumanoidRootPart", "LowerTorso"},
 
-        ["CameraSmoothing"] = 0.20,
+        ["CameraSmoothing"] = 0.10,
         ["ThirdPerson"] = true,
 
         ["FirstPerson"] = true,
-        ["AutoPrediction"] = true,
 
         ["HitChance"] = true,
         ["ShakePower"] = 0,
 
-        ["JumpOffset"] = -1.50,
-        ["FallOffset"] = 0.2,
+        ["JumpOffset"] = 0.3,
+        ["FallOffset"] = -0.2,
 
-        ["Horizontal"] = true,
         ["PredictMovement"] = true,
     },
     ['Silent'] = {
-        ["Prediction"] = 0.128,
+        ["Prediction"] = 0.135,
         ["Detection"] = {
             ['Close'] = 35, 
             ['Mid'] = 65, 
@@ -33,9 +33,6 @@ getgenv().delusion = {
         ["Config"] = {
             ["Points"] = {
                 ["Point Offset"] = 0
-            },
-            ["Velocity"] = {
-                ["Prediction"] = 0.1
             }
         }
     },
@@ -94,7 +91,7 @@ getgenv().delusion = {
         ['Keybind'] = Enum.KeyCode.V,
     },
     ["Esp"] = {
-        ['Chams'] = false,
+        ['Chams'] = true,
         ['Key'] = Enum.KeyCode.T,
         ['Color'] = Color3.fromRGB(10, 50, 10),
         ['Outline'] = Color3.fromRGB(50, 50, 50)
