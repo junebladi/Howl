@@ -4,10 +4,10 @@ getgenv().delusion = {
         ['Keybind'] = Enum.KeyCode.X,
 
         ['Prediction'] = 0.135,
-        ["CameraSmoothing"] = 0.10,
-
-        ['ShakePower'] = 0,
         ['Part'] = "HumanoidRootPart",
+
+        ["CameraSmoothing"] = 0.15,
+        ['ShakePower'] = 0,
 
         ['Jump'] = 0.56,
         ['Fall'] = -0.20,
@@ -17,7 +17,9 @@ getgenv().delusion = {
 
         ["ThirdPerson"] = false,
         ["FirstPerson"] = true,
-
+        
+        ["EasingStyle"] = "Linear",
+        ["EasingDirection"] = "In",
     },
     ['Silent'] = {
         ["Prediction"] = 0.14276,
@@ -31,7 +33,6 @@ getgenv().delusion = {
         ["Config"] = {
             ["Points"] = {
                 ["Point Offset"] = 0
-
             }
         }
     },
@@ -50,24 +51,36 @@ getgenv().delusion = {
         ["AntiGroundShots"] = false,
         ["Curve"] = false,
     },
+    ["MouseTp"] = {
+        ['Smoothness'] = 0.2,
+        ['HorizontalPrediction'] = 0.2,
+        ['VerticalPrediction'] = 0.8,
+        ['Part'] = "Head",
+        ['Shake'] = false,
+        ['ShakeAmount'] = {
+            ["X"] = 2,
+            ["Y"] = 2,
+            ["Z"] = 0.4
+        },
+    },
     ["ViewCircle"] = {
         ["ShowCircle"] = true,
         ["UseRainbow"] = true,
-        ["DotCount"] = 80,
-        ["DotSize"] = 1.5,
-        ["CircleRadius"] = 200,
+        ["DotCount"] = 50,
+        ["DotSize"] = 5,
+        ["CircleRadius"] = 100,
         ["CircleOpacity"] = 1,
-        ["LineThickness"] = 0.5,
+        ["LineThickness"] = 0.7,
         ["CircleColor"] = Color3.fromRGB(255, 255, 255)
     },
     ["PulseEffect"] = {
         ["Active"] = true,
-        ["Intensity"] = 50,
-        ["Frequency"] = 0.1
+        ["Intensity"] = 60,
+        ["Frequency"] = 0.2
     },
     ["SpinEffect"] = {
         ["Active"] = true,
-        ["RotationSpeed"] = 0.1
+        ["RotationSpeed"] = 0.2
     },  
     ["Spin"] = {
         ['Enabled'] = false,
@@ -76,17 +89,24 @@ getgenv().delusion = {
         ['Keybind'] = Enum.KeyCode.V,
     },
     ["Esp"] = {
-        ['Chams'] = true,
+        ['Chams'] = false,
         ['Key'] = Enum.KeyCode.T,
         ['Color'] = Color3.fromRGB(10, 50, 10),
         ['Outline'] = Color3.fromRGB(50, 50, 50)
     },
     ["Macro"] = {
-        ['Enabled'] = true,
-        ['Keybind'] = "x",
-        ['SideButton'] = "Button4",
+        ['Enabled'] = false,
+        ['Keybind'] = "x",  
+        ['SideButton'] = {
+            ['Enabled'] = true,
+            ['Button'] = "Button4"
+        },
         ['Speed'] = 0.5,
-        ['Type'] = "Third"
+        ['Type'] = "Third", 
+        ['Cooldown'] = 1,  
+        ['MaxRepetitions'] = 100, 
+        ['MaxDuration'] = 30,
+        ['ActiveCount'] = 0 
     },
     ["Cframe"] = {
         ['Enabled'] = true,
