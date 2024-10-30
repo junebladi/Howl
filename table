@@ -116,4 +116,4 @@ getgenv().delusion = {
     }
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/141b06f9c2f2e632298699c19d361e6c.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7eb26a9aeca2665cb9e9620ed3a271ea.lua"))()
