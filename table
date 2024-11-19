@@ -1,119 +1,35 @@
-script_key="";
-getgenv().delusion = {
-    ['Aimbot'] = {
-        ['Keybind'] = Enum.KeyCode.X,
-
-        ['Prediction'] = 0.135,
-        ['Part'] = "HumanoidRootPart",
-
-        ["CameraSmoothing"] = 0.15,
-        ['ShakePower'] = 0,
-
-        ['Jump'] = 0.56,
-        ['Fall'] = -0.20,
-
-        ["HitChance"] = true,
-        ["PredictMovement"] = true,
-
-        ["ThirdPerson"] = false,
-        ["FirstPerson"] = true,
-        
-        ["EasingStyle"] = "Linear",
-        ["EasingDirection"] = "In",
-    },
-    ['Silent'] = {
-        ["Prediction"] = 0.14276,
-        ["NearestPart"] = false,
-        ["SelectedParts"] = {"Head", "HumanoidRootPart", "LowerTorso"},
-        ["Detection"] = {
-            ['Close'] = 35, 
-            ['Mid'] = 65, 
-            ['Far'] = math.huge
-        },
-        ["Config"] = {
-            ["Points"] = {
-                ["Point Offset"] = 0
-            }
-        }
-    },
-    ['RangeHit'] = {
-        ["Enabled"] = false,
-        ["Prediction"] = {
-            ['Close'] = 0.138, 
-            ['Mid'] = 0.1247, 
-            ['Far'] = 0.123
-        }
-    },
-    ["Checks"] = {
-        ['DisableOnTargetDeath'] = true,
-        ['DisableOnPlayerDeath'] = true,
-        ['CheckKoStatus'] = true,
-        ["AntiGroundShots"] = false,
-        ["Curve"] = false,
-    },
-    ["MouseTp"] = {
-        ['Smoothness'] = 0.2,
-        ['HorizontalPrediction'] = 0.2,
-        ['VerticalPrediction'] = 0.8,
-        ['Part'] = "Head",
-        ['Shake'] = false,
-        ['ShakeAmount'] = {
-            ["X"] = 2,
-            ["Y"] = 2,
-            ["Z"] = 0.4
+script_key="@junebladii";
+getgenv().Howl = {
+    ["Global"] = {
+        ["Keybinds"] = {
+            ['AimAssistKeybind'] = "C",
+            ['MacroKeybind'] = "X"
         },
     },
-    ["ViewCircle"] = {
-        ["ShowCircle"] = true,
-        ["UseRainbow"] = true,
-        ["DotCount"] = 50,
-        ["DotSize"] = 5,
-        ["CircleRadius"] = 100,
-        ["CircleOpacity"] = 1,
-        ["LineThickness"] = 0.7,
-        ["CircleColor"] = Color3.fromRGB(255, 255, 255)
-    },
-    ["PulseEffect"] = {
-        ["Active"] = true,
-        ["Intensity"] = 60,
-        ["Frequency"] = 0.2
-    },
-    ["SpinEffect"] = {
-        ["Active"] = true,
-        ["RotationSpeed"] = 0.2
-    },  
-    ["Spin"] = {
-        ['Enabled'] = false,
-        ['SpinSpeed'] = 4900,
-        ['Degrees'] = 360,
-        ['Keybind'] = Enum.KeyCode.V,
-    },
-    ["Esp"] = {
-        ['Chams'] = false,
-        ['Key'] = Enum.KeyCode.T,
-        ['Color'] = Color3.fromRGB(10, 50, 10),
-        ['Outline'] = Color3.fromRGB(50, 50, 50)
-    },
-    ["Macro"] = {
-        ['Enabled'] = false,
-        ['Keybind'] = "x",  
-        ['SideButton'] = {
-            ['Enabled'] = true,
-            ['Button'] = "Button4"
-        },
-        ['Speed'] = 0.5,
-        ['Type'] = "Third", 
-        ['Cooldown'] = 1,  
-        ['MaxRepetitions'] = 100, 
-        ['MaxDuration'] = 30,
-        ['ActiveCount'] = 0 
-    },
-    ["Cframe"] = {
+    ["Silent"] = {
         ['Enabled'] = true,
-        ['Toggle'] = "V",
-        ['Multiplier'] = 0.5,
-        ['Speed'] = 2
-    }
+        ['Part'] = "Head",
+        ['ClosestPart'] = true,
+        ['Prediction'] = 0.102421,
+        ["SilentFOV"] = {
+            ['Visible'] = false,
+            ['Radius'] = 45,
+            ['SilentFOVColor'] = Color3.new(255, 255, 255),
+            ['Thickness'] = 1,
+            ['StickyFov'] = false
+        },
+    },
+    ['AimAssist'] = {
+        ['Predict'] = true, 
+        ['Prediction'] = 0.131,
+        ['Smooth'] = true,
+        ['Smoothness'] = 0.061,
+        ['Shake'] = false,  
+        ["ShakeLevels"] = {
+            ['ValueX'] = 1,  
+            ['ValueY'] = 1,  
+            ['ValueZ'] = 0   
+        },
+    },
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7eb26a9aeca2665cb9e9620ed3a271ea.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e1d489cc6de9cfe0fd0491a25bfaa5e3.lua"))()
