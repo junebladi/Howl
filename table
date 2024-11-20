@@ -9,21 +9,22 @@ getgenv().Howl = {
     ["Silent"] = {
         ['Enabled'] = true,
         ['Part'] = "Head",
-        ['ClosestPart'] = true,
-        ['Prediction'] = 0.102421,
-        ["SilentFOV"] = {
+        ['Prediction'] = 0.139,
+        ['ClosestPart'] = false,
+        ["FieldOfView"] = {
             ['Visible'] = false,
-            ['Radius'] = 45,
-            ['SilentFOVColor'] = Color3.new(255, 255, 255),
+            ['Radius'] = 87,
+            ['FOVColor'] = Color3.new(255, 255, 255),
             ['Thickness'] = 1,
             ['StickyFov'] = false
         },
     },
     ['AimAssist'] = {
-        ['Predict'] = true, 
-        ['Prediction'] = 0.131,
+        ['Predict'] = true,
+        ['Part'] = "HumanoidRootPart",
+        ['Prediction'] = 0.135,
         ['Smooth'] = true,
-        ['Smoothness'] = 0.061,
+        ['Smoothness'] = 0.081,
         ['Shake'] = false,  
         ["ShakeLevels"] = {
             ['ValueX'] = 1,  
@@ -33,3 +34,4 @@ getgenv().Howl = {
     },
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e1d489cc6de9cfe0fd0491a25bfaa5e3.lua"))()
+
