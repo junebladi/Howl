@@ -9,18 +9,19 @@ getgenv().Howl = {
     ["Silent"] = {
         ['Enabled'] = true,
         ['Part'] = "Head",
-        ['ClosestPart'] = true,
+        ['ClosestPart'] = false,
         ['Prediction'] = 0.139,
-        ["FieldOfView"] = {
+        ["SilentFOV"] = {
             ['Visible'] = true,
-            ['Radius'] = 0,
-            ['FieldOfViewColor'] = Color3.new(255, 255, 255),
-            ['Thickness'] = 0,
+            ['Radius'] = 60,
+            ['SilentFOVColor'] = Color3.new(255, 255, 255),
+            ['Thickness'] = 1,
             ['StickyFov'] = false
         },
     },
     ['AimAssist'] = {
-        ['Predict'] = true, 
+        ['Predict'] = true,
+        ['Part'] = "HumanoidRootPart",
         ['Prediction'] = 0.135,
         ['Smooth'] = true,
         ['Smoothness'] = 0.081,
